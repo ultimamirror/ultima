@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get install curl -y
 cd $HOME
 rm -r mncheck.sh
-wget http://ultima.qa/mncheck.sh
+wget https://raw.githubusercontent.com/ultimamirror/ultima/master/INSTALLER/mncheck.sh
 chmod +x mncheck.sh
 
 #setup crontab
