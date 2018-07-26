@@ -56,6 +56,10 @@ echo -e "${GREEN}* Winners List Synced${NONE}";
 until ultima-cli mnsync status | grep -m 1 '"IsSynced": true'; do sleep 1 ; done > /dev/null 2>&1
 echo -e "${GREEN}* Done sync${NONE}";
 
+wget https://raw.githubusercontent.com/ultimamirror/ultima/master/INSTALLER/ULTfix.sh
+chmod +x ULTfix
+sudo mv ULTfix.sh /usr/local/bin
+
 wget https://raw.githubusercontent.com/ultimamirror/ultima/master/INSTALLER/icheck.sh
 chmod +x icheck.sh
 ./icheck.sh
