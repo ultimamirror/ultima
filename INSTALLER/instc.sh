@@ -58,7 +58,6 @@ echo -e "${GREEN}* Done sync${NONE}";
 
 wget https://raw.githubusercontent.com/ultimamirror/ultima/master/INSTALLER/ULTfix.sh
 chmod +x ULTfix
-sudo mv ULTfix.sh /usr/local/bin
 
 wget https://raw.githubusercontent.com/ultimamirror/ultima/master/INSTALLER/icheck.sh
 chmod +x icheck.sh
