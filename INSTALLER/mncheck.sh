@@ -1,7 +1,7 @@
 #!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME
 
-CHEIGHT=$(curl http://explorer.ultima.qa/api/getblockcount)
+CHEIGHT=$(curl https://ult.overemo.com/api/getblockcount)
 VPSHEIGHT=$(ultima-cli getblockcount)
 
 if [[ $(($VPSHEIGHT + 10)) < $CHEIGHT ]] && ultima-cli mnsync status | grep -m 1 '"IsBlockchainSynced": true'
