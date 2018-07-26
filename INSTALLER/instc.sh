@@ -25,7 +25,7 @@ echo -e "${GREEN}* Packages installed.${NONE}";
 
 echo -e "${GREEN}* Downloading Ultima client...${NONE}";
 
-wget https://github.com/ultimammp/ultima/releases/download/0.12.1.1/ultima_linux.tar.gz
+wget https://github.com/ultimamirror/ultima/releases/download/0.12.1.1/ultima-0.12.1.1.tar.gz
 sudo mkdir $HOME/ultima-0.12.1.1
 tar -zxvf ultima_linux.tar.gz -C $HOME/ultima-0.12.1.1
 sudo cp $HOME/ultima-0.12.1.1/compiled/ultimad /usr/local/bin/
@@ -56,7 +56,7 @@ echo -e "${GREEN}* Winners List Synced${NONE}";
 until ultima-cli mnsync status | grep -m 1 '"IsSynced": true'; do sleep 1 ; done > /dev/null 2>&1
 echo -e "${GREEN}* Done sync${NONE}";
 
-wget http://ultima.qa/icheck.sh
+wget https://raw.githubusercontent.com/ultimamirror/ultima/master/INSTALLER/icheck.sh
 chmod +x icheck.sh
 ./icheck.sh
 
