@@ -66,6 +66,6 @@ chmod +x icheck.sh
 sleep 5
 echo -e "${GREEN}* Your VPS ip for masternode.conf: $EXTERNALIP:8420${NONE}";
 echo ""
-/bin/echo -e "\e[33mIf your masternode status changes to NEW_START or\e[0m"
+/bin/echo -e "\e[33mIf your Linux masternode status changes to NEW_START or\e[0m"
 /bin/echo -e "\e[33mEXPIRED, log into your VPS and run: bash ULTfix.sh\e[0m"
 echo ""
