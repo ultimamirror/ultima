@@ -44,4 +44,4 @@ done
 
 #Complete
 clear
-/bin/echo -e "\e[92mMasternode maintenance complete!\e[0m" && echo "" 
+/bin/echo -e "\e[92mMasternode maintenance complete!\e[0m" && echo ""
